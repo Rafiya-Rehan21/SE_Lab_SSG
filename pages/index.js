@@ -5,28 +5,29 @@ export default function Home() {
     <>
       <Head>
         {/* Static title and description */}
-        <title>My Static Site</title> {/* Static title */}
-        <meta name="description" content="This is a sample static site." /> {/* Static description */}
-        <meta property="og:title" content="My Static Site" /> {/* Static Open Graph title */}
-        <meta property="og:description" content="This is a sample static site using Next.js." /> {/* Static Open Graph description */}
+        <title>My Static Site</title>
+        <meta name="description" content="This is a sample static site." />
+        <meta property="og:title" content="My Static Site" />
+        <meta property="og:description" content="This is a sample static site using Next.js." />
       </Head>
 
-      {/* Using Semantic HTML Tags for better accessibility */}
+      {/* Semantic HTML structure */}
       <header>
         <h1>Welcome to My Static Site</h1>
       </header>
 
       <main>
-        {/* Example of lazy-loaded image with alt attribute for accessibility */}
+        {/* Example lazy-loaded image */}
         <img 
-          src="/images/image.png" 
+          src="/images/image.jpg" 
           alt="A butterfly" 
           loading="lazy" 
         />
+        <p>This is an example of a static site built with Next.js.</p>
       </main>
 
       <footer>
-        <p>Footer Content</p>
+        <p>Footer Content © 2024</p>
       </footer>
     </>
   );
