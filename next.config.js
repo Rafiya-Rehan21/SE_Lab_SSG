@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // Ensures static export
-  basePath: '/SE_Lab_SSG',  // Add your repository name here
+  output: "export", // Ensures static export
+  basePath: process.env.NODE_ENV === 'production' ? '/SE_Lab_SSG' : '', // Apply basePath only in production
   images: {
-    unoptimized: true,  // Disable image optimization for static exports
+    unoptimized: true, // Disable image optimization for static exports
   },
 };
 
