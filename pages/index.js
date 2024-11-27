@@ -1,30 +1,18 @@
-import { getPostData } from '../lib/posts';
 import Head from 'next/head';
 
-// Using getStaticProps for Static Site Generation
-export async function getStaticProps() {
-  const { data, content } = getPostData();
-  return {
-    props: {
-      data,
-      content,
-    },
-  };
-}
-
-export default function Home({ data, content }) {
+export default function Home() {
   return (
     <>
       <Head>
-        <title>{data.title}</title>  {/* Dynamic title from Markdown */}
-        <meta name="description" content={data.title} /> {/* Description from title */}
-        <meta property="og:title" content={data.title} /> {/* Open Graph title */}
-        <meta property="og:description" content={data.title} /> {/* Open Graph description */}
+        {/* Static title and description */}
+        <title>My Static Site</title> {/* Static title */}
+        <meta name="description" content="This is a sample static site." /> {/* Static description */}
+        <meta property="og:title" content="My Static Site" /> {/* Static Open Graph title */}
+        <meta property="og:description" content="This is a sample static site using Next.js." /> {/* Static Open Graph description */}
       </Head>
+
       <div>
-        <h1>{data.title}</h1>
-        <p>{data.date}</p>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <h1>Welcome to My Static Site</h1>
       </div>
     </>
   );
