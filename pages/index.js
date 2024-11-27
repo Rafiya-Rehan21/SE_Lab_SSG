@@ -22,10 +22,11 @@ export default function Home() {
       <main>
         {/* Example lazy-loaded image */}
         <img
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image.jpg`}
-          alt="A butterfly"
-          loading="lazy"
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/image.png`} 
+          alt="A butterfly" 
+          loading="lazy" 
         />
+
         <p>This is an example of a static site built with Next.js.</p>
       </main>
 
