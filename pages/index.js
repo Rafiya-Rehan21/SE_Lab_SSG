@@ -8,7 +8,10 @@ export default function Home() {
         <title>My Static Site</title>
         <meta name="description" content="This is a sample static site." />
         <meta property="og:title" content="My Static Site" />
-        <meta property="og:description" content="This is a sample static site using Next.js." />
+        <meta
+          property="og:description"
+          content="This is a sample static site using Next.js."
+        />
       </Head>
 
       {/* Semantic HTML structure */}
@@ -23,8 +26,6 @@ export default function Home() {
           alt="A butterfly"
           loading="lazy"
         />
-
-
         <p>This is an example of a static site built with Next.js.</p>
       </main>
 

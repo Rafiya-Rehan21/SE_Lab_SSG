@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Ensures static export
-  basePath: process.env.NODE_ENV === 'production' ? '/SE_Lab_SSG' : '', // Apply basePath only in production
+  output: "export",  // Ensures static export
   images: {
-    unoptimized: true, // Disable image optimization for static exports
+    unoptimized: true,  // Disable image optimization for static exports
   },
 };
 
