@@ -23,6 +23,8 @@ export default function Home() {
           alt="A butterfly"
           loading="lazy"
         />
+
+
         <p>This is an example of a static site built with Next.js.</p>
       </main>
 
